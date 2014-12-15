@@ -1,4 +1,6 @@
 README
 ================================================
 
-The scripts s and wiki associated with Cianfrocco and Leschziner, 2014: Single particle cryo-electron microscopy image processing in the cloud.
+The scripts used for performing Relion 3D refinement of 80S ribosome particles. 
+
+Find more information on the wiki: [Github wiki] (https://github.com/mcianfrocco/Cianfrocco-and-Leschziner-2014-EMCloudProcessing/wiki)
