@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#$ -cwd
+#$ -S /bin/bash
+#$ -pe orte 320
+#$ -q all.q
+#$ -V
+#$ -N run_3Dclass_Class2newpix 
+
+mpirun relion_refine_mpi --o Refine3D/run4_local_refine --auto_refine --split_random_halves --i Class3D/run4_local_ct8_it020_data_class2.star --particle_diameter 350 --angpix 1.77 --ref Class3D/run4_local_ct8_it020_class002.mrc --ini_high 40 --ctf --flatten_solvent --zero_mask --oversampling 1 --healpix_order 2 --auto_local_healpix_order 4 --offset_range 5 --offset_step 2 --sym C1 --low_resol_join_halves 40 --norm --scale  --j 1 --memory_per_thread 4 
+
+
+
+
+

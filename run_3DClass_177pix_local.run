@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#$ -cwd
+#$ -S /bin/bash
+#$ -pe orte 288
+#$ -q all.q
+#$ -V
+#$ -N run_3Dclass_177_local
+
+mpirun relion_refine_mpi --o Class3D/run4_local_ct8 --continue Class3D/run4_it008_optimiser.star --iter 20 --tau2_fudge 3 --oversampling 1 --healpix_order 4 --sigma_ang 3.33333 --offset_range 5 --offset_step 2 --j 1
+
+
+
+
+
+
+
