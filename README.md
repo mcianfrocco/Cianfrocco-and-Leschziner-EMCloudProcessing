@@ -1,4 +1,4 @@
-README
+Scripts & protocol from: Single particle cryo-EM in the cloud
 ================================================
 
 The scripts used for performing Relion 3D refinement of 80S ribosome particles. 
