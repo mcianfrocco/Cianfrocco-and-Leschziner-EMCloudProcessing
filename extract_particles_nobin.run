@@ -1,3 +1,0 @@
-/programs/x/relion/1.3/bin/mpirun -np 22 relion_preprocess_mpi --o particles_noBin_noEdge --mic_star all_micrographs_ctf.star --coord_suffix .box --extract --extract_size 240 --norm --bg_radius 98 --white_dust 5 --black_dust 5 --invert_contrast 
-
-
