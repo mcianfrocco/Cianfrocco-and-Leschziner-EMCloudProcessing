@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#$ -cwd
+#$ -S /bin/bash
+#$ -pe orte 256
+#$ -q all.q
+#$ -V
+#$ -N run_3DRefine
+
+mpirun relion_refine_mpi --o Refine3D/run1 --auto_refine --split_random_halves --i Class3D/run1_ct13_it025_data_class1_and3.star --particle_diameter 350 --angpix 1.77 --ref Class3D/run1_ct13_it025_class001.mrc --ini_high 50 --ctf --flatten_solvent --zero_mask --oversampling 1 --healpix_order 2 --auto_local_healpix_order 4 --offset_range 5 --offset_step 2 --sym C1 --low_resol_join_halves 40 --norm --scale  --j 1 --memory_per_thread 4 --dont_combine_weights_via_disc 
+

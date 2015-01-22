@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#$ -cwd
+#$ -S /bin/bash
+#$ -pe orte 256
+#$ -q all.q
+#$ -V
+#$ -N run_3Dclass_local
+
+mpirun relion_refine_mpi --o Class3D/run1_ct13 --continue Class3D/run1_3dclass_it013_optimiser.star --iter 25 --tau2_fudge 4 --oversampling 1 --healpix_order 4 --sigma_ang 3.33333 --offset_range 5 --offset_step 2 --j 1 --dont_combine_weights_via_disc  
+

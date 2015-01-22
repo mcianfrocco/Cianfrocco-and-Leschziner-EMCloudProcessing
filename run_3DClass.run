@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#$ -cwd
+#$ -S /bin/bash
+#$ -pe orte 256
+#$ -q all.q
+#$ -V
+#$ -N run_3Dclass
+
+mpirun relion_refine_mpi --o Class3D/run1_3dclass --i particles.star --particle_diameter 350 --angpix 1.77 --ref emd_2275_scaled_bin4_filt60A_sca_240.mrc --firstiter_cc --ctf --iter 15 --tau2_fudge 4  --K 4 --flatten_solvent --zero_mask --oversampling 1 --healpix_order 2 --offset_range 5 --offset_step 2 --sym C1 --norm --scale  --j 1 --memory_per_thread 4 --dont_combine_weights_via_disc 
